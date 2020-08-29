@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ii02735/learnRedis/issues"
   },
-  "homepage": "https://github.com/ii02735/learnRedis#readme"
+  "homepage": "https://github.com/ii02735/learnRedis#readme",
+  "dependencies": {
+    "ioredis": "^4.17.3"
+  }
 }
