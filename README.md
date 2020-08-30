@@ -12,4 +12,8 @@ Il existe ***deux modes** de persistance* :
 
 - **AOF (Append-only file)** qui rédige les opérations menées sur la base de données au sein du fichier système. Ceci *est exécuté à chaque fois quand le serveur **est démarré*** afin de pouvoir reconstruire les données au lancement. Redis se contente **d'exécuter les changements les plus récents** afin que le fichier système ne s'alourdisse pas trop.
 
+**AOF** est utile pour sa **vitesse et sa disponibilité**, et **RDB** pour sa **récupération complète de données** : il est recommandé **de choisir les deux** pour prévoir quasiment toute situation problématique.
+
 Il possible d'en choisir aucun, les données existeront uniquement durant **l'exécution du serveur.**
+
+Pour configurer le système de persistance, il faut modifier le fichier de configuration de Redis : **redis.conf**
