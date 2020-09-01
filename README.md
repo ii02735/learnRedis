@@ -48,3 +48,7 @@ Si le serveur possède un **slave**, il faut modifier le fichier .conf du slave 
 `masterauth <masterpassword>̀  afin que le serveur répliqué puisse de nouveau communiquer avec le serveur maître.
 
 Puisqu'on a modifié des fichiers .conf ici, il ne faut pas oublier de **redémarrer** les instances de serveur Redis.
+
+Pour renseigner le mot de passe au sein du CLI : `./redis-cli -a <password>`
+
+Attention à partir de la version 6, il faut utiliser le système **d'ACL** pour mettre en place un environnement qui requiert l'authentification.
